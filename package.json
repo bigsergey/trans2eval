@@ -1,0 +1,23 @@
+{
+  "name": "trans2eval",
+  "version": "0.0.0",
+  "description": "Machine translation and evaluation.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js --harmony"
+  },
+  "keywords": [
+    "Machine Translation",
+    "Evalution",
+    "METEOR",
+    "BLEU"
+  ],
+  "author": "Sergey Bolshov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-config-apptension": "^1.1.1"
+  }
+}

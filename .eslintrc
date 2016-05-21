@@ -1,0 +1,6 @@
+{
+  "extends": "apptension",
+  "rules": {
+    "no-console": 0
+  }
+}

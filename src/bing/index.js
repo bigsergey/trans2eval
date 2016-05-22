@@ -1,9 +1,6 @@
-/**
- * Warning! Bing needs to encode clientId, clinetSecret and text.
- */
-
 const config = require('../config').bing;
-const translate = require('bing-translate').init({
+// Warning! Bing needs to encode clientId, clinetSecret and text.
+const bingTranslate = require('bing-translate').init({
   'client_id': encodeURI(config.clientId),
   'client_secret': encodeURI(config.clientSecret)
 });
@@ -13,8 +10,8 @@ const makeTranslation = (text, from, to) => {
   to = to || 'ru';
 
   return new Promise((resolve, reject) => {
-    translate.translate(encodeURI(text), from, to, function (error, res) {
-      if (res.code === 200) {
+    bingTranslate.translate(encodeURI(text), from, to, function (error, res) {
+      if (res && res.code === 200) {
         resolve(res.translated_text);
       }
       reject(error);

@@ -1,14 +1,14 @@
-const config = require('../config').yandex;
-const yandexTranslate = require('yandex-translate')(config.key);
+const config = require('../config').google;
+const googleTranslate = require('google-translate')(config.apiKey);
 
 const makeTranslation = (text, from, to) => {
   from = from || 'pl';
   to = to || 'ru';
 
   return new Promise((resolve, reject) => {
-    yandexTranslate.translate(text, {from, to}, function (error, res) {
+    googleTranslate.translate(text, from, to, function (error, res) {
       if (res && res.code === 200) {
-        resolve(res.text);
+        resolve(res.translatedText);
       }
       reject(error);
     });
@@ -17,7 +17,7 @@ const makeTranslation = (text, from, to) => {
 
 makeTranslation('Tłumaczenie działa.')
   .then(translation => {
-    console.log(`yandex: ${translation}`);
+    console.log(`google: ${translation}`);
     return translation;
   })
   .catch(error => {

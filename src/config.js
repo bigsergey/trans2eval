@@ -7,6 +7,6 @@ module.exports = {
     clientSecret: 'your_client_secret'
   },
   google: {
-    apiKey: 't'
+    apiKey: 'your_api_key'
   }
 };

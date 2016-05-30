@@ -4,9 +4,9 @@ System for machine translation and its evaluation. Provides a common interface t
 
 ### System requirements
 
-* Node.js for project
-* Java for METEOR 1.5
-* Perl for BLEU 
+* Node.js for project.
+* Java for METEOR 1.5. Please download it and put into ```/path/to/project/trans2eval/METEOR``` folder (it is too big to keep it in repo).
+* Perl for BLEU.
 
 ### How to start
 

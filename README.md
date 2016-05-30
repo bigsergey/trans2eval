@@ -54,20 +54,32 @@ bing: {
 
 ### Trans2Eval options
 
-*--name {String}*
+**--name {String}**
+
 Name for input text file.
 
-*--from {String}*
+
+**--from {String}**
+
 Id for input language (eg. ```pl```).
 
-*--to {String}*
+
+**--to {String}**
+
 Id for output language (eg. ```ru```).
 
-*--translators {String[]}*
+
+**--translators {String[]}**
+
 Define list of translation systems which you want to use.
 
-*--bleu-only*
+
+**--bleu-only**
+
 Use only BLEU evaluation method.
 
-*--meteor-only*
+
+**--meteor-only**
+
 Use only METEOR evaluation method.
+

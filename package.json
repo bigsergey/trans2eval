@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js --harmony"
+    "trans2eval": "node ./src/index.js --harmony"
   },
   "keywords": [
     "Machine Translation",
@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "bing-translate": "0.0.2",
+    "exec-queue": "0.0.2",
     "google-translate": "^1.0.6",
+    "request": "^2.72.0",
     "yandex-translate": "^2.1.0"
   }
 }

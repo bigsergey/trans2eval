@@ -1,8 +1,8 @@
+const config = require('../config').translatica;
 const request = require('request');
-const TRANSLATICA_URL = 'http://translatica.pl//translate.php?direction=';
 
 const getURL = (text, from, to) => {
-  return `${TRANSLATICA_URL}${from}${to}&source=${encodeURI(text).replace(/%20/g, '+')}`;
+  return `${config.url}?direction=${from}${to}&source=${encodeURI(text).replace(/%20/g, '+')}`;
 };
 
 const makeTranslation = (text, from, to) => {

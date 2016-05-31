@@ -8,5 +8,12 @@ module.exports = {
   },
   google: {
     apiKey: 'your_api_key'
+  },
+  moses: {
+    url: '127.0.0.1',
+    port: '8080'
+  },
+  translatica: {
+    url: 'http://translatica.pl//translate.php'
   }
 };
